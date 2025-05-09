@@ -10,7 +10,7 @@ function generateManimVideo() {
         const manimProcess = spawn(pythonPath, [
             '-m', 'manim',
             '-ql',  // Medium quality
-            path.join('python_scripts', 'manim_scene.py'),
+            path.join('python_scripts', 'text_manim.py'),
             'CreateCircle',
             // Output file
         ]);
